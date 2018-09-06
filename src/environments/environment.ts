@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  swapi_url: "https://swapi.co/api/"
+  //swapi_api_key: "476e23fe1116f4e69d2a3e68672604e1"
 };
 
 /*

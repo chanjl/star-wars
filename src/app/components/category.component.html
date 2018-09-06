@@ -1,0 +1,14 @@
+<div *ngIf="categories.length <=0">
+  <h4>Category List is Empty</h4>
+</div>
+<div *ngFor="let c of categories; let ind=index;" margin="10px">
+  <mat-card fxLayout="column" fxLayoutGap="10px" (click)='select(c)'>
+    <div fxLayout="row" fxLayoutAlign="center">
+      <mat-card-title class="title">
+        {{c}}
+      </mat-card-title>
+      <mat-card-subtitle>
+      </mat-card-subtitle>
+    </div>
+  </mat-card>
+</div>
