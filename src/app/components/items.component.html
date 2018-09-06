@@ -1,4 +1,21 @@
-<p>
-  items works!
-</p>
-<img src="assets/back.png" class="logo" (click)="back()">
+<div *ngIf="items.length <=0">
+  <h4>Item List is Empty</h4>
+</div>
+<div>
+  <mat-toolbar color="accent" fxLayout="row column" fxLayoutAlign="center center">
+    <div>
+      <span class="title">{{categoryName}}</span>
+    </div>
+  </mat-toolbar>
+</div>
+<div *ngFor="let i of items; let ind=index;" margin="10px">
+  <mat-card fxLayout="column" fxLayoutGap="10px" (click)='select(c)'>
+    <div fxLayout="row" fxLayoutAlign="center">
+      <mat-card-title class="title">
+        {{i}}
+      </mat-card-title>
+      <mat-card-subtitle>
+      </mat-card-subtitle>
+    </div>
+  </mat-card>
+</div>

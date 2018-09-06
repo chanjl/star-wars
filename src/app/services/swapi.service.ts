@@ -15,4 +15,9 @@ export class SwapiService {
     return this.http.get(`${environment.swapi_url}`);
     // return this.http.get(`${environment.swapi_url}${city}`);
   }
+
+  getItems(categoryName: string): Observable<any> {
+    console.log("getItems>");
+    return this.http.get(`${environment.swapi_url}${categoryName}`);
+  }
 }

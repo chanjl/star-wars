@@ -19,3 +19,5 @@ ng generate service services/xx --flat -speca false
 import HttpClient, Observable, environment to xx.service.ts
 import HttpClientModule in app.module.ts
 import Router to listen to change and navigate to new route
+
+import ActivatedRoute to display.ts
